@@ -2,6 +2,11 @@ import requests
 import time
 import os
 
+import os
+
+AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
+BASE_ID = os.environ["BASE_ID"]
+
 # ==========================
 # ADZUNA API CONFIG
 # ==========================
