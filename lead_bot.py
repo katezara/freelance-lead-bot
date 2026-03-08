@@ -1,7 +1,7 @@
 import requests
 
-ADZUNA_APP_ID = "YOUR_ID"
-ADZUNA_APP_KEY = "YOUR_KEY"
+ADZUNA_APP_ID = "d85b2c19"
+ADZUNA_APP_KEY = "8bd1c366651360a9f648221d3ad821b2"
 
 url = "https://api.adzuna.com/v1/api/jobs/us/search/1"
 
