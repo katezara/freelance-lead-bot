@@ -130,6 +130,11 @@ def send_telegram_message(message):
 
     requests.post(url, json=payload)
 
+import requests
+import os
+
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 # ==========================
 # MAIN BOT RUNNER
@@ -151,3 +156,30 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+def send_telegram_message(message):
+
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+
+    payload = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "Markdown"
+    }
+
+    requests.post(url, json=payload)
+
+
+message = f"""
+🚨 New Freelance Lead
+
+💼 {title}
+🏢 {company}
+📍 {location}
+
+🔎 Keyword: {search_term}
+
+🔗 {url}
+"""
+
+send_telegram_message(message)
