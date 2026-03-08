@@ -1,3 +1,12 @@
+import requests
+import time
+import os
+
+# Airtable credentials
+AIRTABLE_TOKEN = os.environ["AIRTABLE_TOKEN"]
+BASE_ID = os.environ["BASE_ID"]
+TABLE_NAME = "Job Leads"
+
 AIRTABLE_TOKEN = "patABC123XYZ456"
 BASE_ID = "appXJDF8392JDK"
 TABLE_NAME = "Job Leads"
