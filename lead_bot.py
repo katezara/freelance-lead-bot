@@ -1,3 +1,6 @@
+AIRTABLE_TOKEN = "patABC123XYZ456"
+BASE_ID = "appXJDF8392JDK"
+TABLE_NAME = "Job Leads"
 import requests
 import time
 
