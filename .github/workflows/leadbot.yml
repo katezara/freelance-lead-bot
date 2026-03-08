@@ -30,3 +30,9 @@ jobs:
       - name: Run lead bot
         run: |
           python lead_bot.py
+
+          env:
+  AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+  BASE_ID: ${{ secrets.BASE_ID }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
