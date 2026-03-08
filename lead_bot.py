@@ -120,10 +120,10 @@ def search_jobs(term):
 
 def send_telegram_message(message):
 
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{8561841506:AAFMtPORf1nHYVElQXGuxtsA6_NL60-_hRM}/sendMessage"
 
     payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
+        "chat_id": 7782399136,
         "text": message,
         "parse_mode": "Markdown"
     }
